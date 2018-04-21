@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25a7dfa-83f4-4809-8881-2b8ca6f8c775" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/footer/footer.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/footer/footer.style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/header/header.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/header/header.style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/styles/color.style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/styles/global.style.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/home/home.component.js" afterPath="$PROJECT_DIR$/src/routes/home/home.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/home/home.style.js" afterPath="$PROJECT_DIR$/src/routes/home/home.style.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -261,7 +253,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524292381231</updated>
-      <workItem from="1524292383167" duration="11203000" />
+      <workItem from="1524292383167" duration="11385000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1524292560015</created>
@@ -298,11 +290,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524300410024</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add user.">
+      <created>1524306562162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1524306562163</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11203000" />
+    <option name="totallyTimeSpent" value="11385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -357,7 +356,8 @@
     <MESSAGE value="Add styled components library." />
     <MESSAGE value="Add styles to home." />
     <MESSAGE value="Add styles to footer and header." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add styles to footer and header." />
+    <MESSAGE value="Add user." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add user." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
