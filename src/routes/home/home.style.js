@@ -30,3 +30,7 @@ export const UserButton = styled.button`
     margin-top: 15px;
     cursor: pointer;
 `;
+
+export const UserContainer = styled.div`
+
+`;

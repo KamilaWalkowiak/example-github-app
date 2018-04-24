@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 
 //Styles
-import { UserLoginBox, UserButton, UserInput } from "./home.style";
+import {
+    UserLoginBox,
+    UserButton,
+    UserInput,
+    UserContainer
+} from "./home.style";
 import { Wrapper } from "../../utils/styles/global.style";
 
 //Components
@@ -35,6 +40,7 @@ class Home extends Component {
         });
     };
 
+    renderUsers = () => this.state.users.map(item => <div>{item}</div>);
 
     render() {
         return (
@@ -50,6 +56,9 @@ class Home extends Component {
                                 Add user
                             </UserButton>
                     </UserLoginBox>
+                    <UserContainer>
+                        {this.renderUsers()}
+                    </UserContainer>
                 </Wrapper>
                 <Footer/>
             </div>
