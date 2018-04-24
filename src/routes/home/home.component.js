@@ -1,12 +1,20 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
-//Styles
-import { UserLoginBox, UserButton, UserInput } from "./home.style";
-import { Wrapper } from "../../utils/styles/global.style";
-
-//Components
+// Components
 import Header from '../../components/header/header.component';
 import Footer from '../../components/footer/footer.component';
+
+// Styles
+import {
+    Container,
+    UserLoginBox,
+    UserInput,
+    UserButton,
+    UsersContainer
+} from './home.style';
+
+import {Wrapper} from "../../utils/styles/global.style";
 
 class Home extends Component {
     state = {
@@ -17,6 +25,7 @@ class Home extends Component {
     componentDidMount() {
         console.log("mount", this.state.users)
     }
+
     componentDidUpdate() {
         console.log("update", this.state.users)
     }
@@ -35,10 +44,18 @@ class Home extends Component {
         });
     };
 
+    renderUsers = () => this.state.users.map((item) =>
+        <div>
+            <Link to={`/user/${item}`}>
+                {item}
+            </Link>
+        </div>
+    );
+
 
     render() {
         return (
-            <div>
+            <Container>
                 <Header/>
                 <Wrapper>
                     <UserLoginBox>
@@ -46,13 +63,16 @@ class Home extends Component {
                             Please add GitHub user name to observable.
                         </div>
                         <UserInput value={this.state.userValue} onChange={this.handleChange}/>
-                            <UserButton onClick={this.addNewUser}>
-                                Add user
-                            </UserButton>
+                        <UserButton onClick={this.addNewUser}>
+                            Add user
+                        </UserButton>
                     </UserLoginBox>
+                    <UsersContainer>
+                        {this.renderUsers()}
+                    </UsersContainer>
                 </Wrapper>
                 <Footer/>
-            </div>
+            </Container>
 
         );
     }
